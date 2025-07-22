@@ -44,7 +44,7 @@ const SingleProductPage = () => {
                 product.images.map((image, index) => (
                   <img
                     key={index}
-                    src={`http://localhost:5000/products/${image}`}
+                    src={`${config.backendURL}/products/${image}`}
                     alt={product.title}
                     className={selectedImage === index ? "selected_image" : ""}
                     onClick={() => setSelectedImage(index)}
