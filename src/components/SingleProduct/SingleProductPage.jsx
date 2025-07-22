@@ -1,6 +1,7 @@
 import React, { memo, useContext, useState } from "react";
 
 import useData from "../../hooks/useData";
+import config from "../../config.json";
 import "./SingleProductPage.css";
 import QuantityInput from "./QuantityInput";
 import { useParams } from "react-router-dom";
