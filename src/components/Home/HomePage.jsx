@@ -12,7 +12,8 @@ const HomePage = () => {
         title="Buy iphone 14 pro"
         subtitle="Experience the 
       power of the latest iphone 14 with our most pro camera ever."
-        link="/product/6875f3814225fe93b7386aa4"
+        //changed id from local to database
+        link="/product/687f5e249240fbdb3bd8f8da"
         image={iphone}
       />
       <FeaturedProducts />
@@ -20,7 +21,8 @@ const HomePage = () => {
         title="Build the ultimate setup"
         subtitle="You can add Studio Display and colour matched magic 
         accessories to your bag after configure your Mac mini."
-        link="/product/6875f3814225fe93b7386aac"
+        //changed id from local to database
+        link="/product/687f5e249240fbdb3bd8f8e2"
         image={mac}
       />
     </div>
