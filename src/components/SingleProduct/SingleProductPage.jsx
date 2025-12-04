@@ -8,6 +8,8 @@ import { useParams } from "react-router-dom";
 import Loder from "./../Common/Loder";
 import CartContext from "../../context/CartContext";
 import UserContext from "../../context/UserContext";
+//
+import { imageBaseUrl } from "../../utils/api-client";
 
 // const product = {
 //   id: 1,
@@ -44,7 +46,8 @@ const SingleProductPage = () => {
                 product.images.map((image, index) => (
                   <img
                     key={index}
-                    src={`${config.backendURL}/products/${image}`}
+                    // src={`${config.backendURL}/products/${image}`}
+                    src={`${imageBaseUrl}/products/${image}`}
                     alt={product.title}
                     className={selectedImage === index ? "selected_image" : ""}
                     onClick={() => setSelectedImage(index)}
@@ -53,7 +56,8 @@ const SingleProductPage = () => {
             </div>
 
             <img
-              src={`http://localhost:5000/products/${product.images[selectedImage]}`}
+              // src={`http://localhost:5000/products/${product.images[selectedImage]}`}
+              src={`${imageBaseUrl}/products/${image}`}
               alt={product.title}
               className="single_product_display"
             />

@@ -9,3 +9,6 @@ export default axios.create({
   // If using Vite:
   baseURL: `${backendURL}/api`,
 });
+
+// 2. Add this export for IMAGES (no /api)
+export const imageBaseUrl = backendURL;

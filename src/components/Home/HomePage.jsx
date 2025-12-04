@@ -12,7 +12,7 @@ const HomePage = () => {
         title="Buy iphone 14 pro"
         subtitle="Experience the 
       power of the latest iphone 14 with our most pro camera ever."
-        link="/api/product/6875f3814225fe93b7386aa4"
+        link="/product/6875f3814225fe93b7386aa4"
         image={iphone}
       />
       <FeaturedProducts />
